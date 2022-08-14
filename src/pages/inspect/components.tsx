@@ -229,3 +229,5 @@ export const Resolver: React.FC<{
     </div>
   );
 };
+
+export default Resolver;

@@ -129,3 +129,5 @@ export const Inspector: React.FC<{nestedTrace?: NestedTrace[]}> = ({
     </>
   );
 };
+
+export default Inspector;
