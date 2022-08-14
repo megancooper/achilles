@@ -8,7 +8,7 @@ Visualizer for <a target="_blank" href="https://github.com/apollographql/apollo-
   <a href="#contributing">Contribute</a>
 </p>
 
-![Demo Video](/assets/demo-video.mov?raw=true "Demo Video")
+![Demo Video](/assets/demo-video.mp4)
 
 ## About
 This tool visualizes the output of the apollo-tracing extension. You can use it to understand the performance of your application.
