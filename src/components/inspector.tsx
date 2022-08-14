@@ -8,11 +8,11 @@ import {InView} from "react-intersection-observer";
 import {
   TracingPayload as TracingPayloadSchema,
   Resolver as ResolverSchema,
-} from "../../schemas";
-import {nanoToMilli, getNumChunksOfTime} from "../../utils/time";
-import {Block, Resolver} from "./components";
-import CrossHair from "../../svgs/cross-hair.svg";
-import HandFinger from "../../svgs/hand-finger.svg";
+} from "../schemas";
+import {nanoToMilli, getNumChunksOfTime} from "../utils/time";
+import {Block, Resolver} from "./resolver";
+import CrossHair from "../svgs/cross-hair.svg";
+import HandFinger from "../svgs/hand-finger.svg";
 
 type TracingPayload = z.infer<typeof TracingPayloadSchema>;
 type ResolverType = z.infer<typeof ResolverSchema>;
@@ -129,5 +129,3 @@ export const Inspector: React.FC<{nestedTrace?: NestedTrace[]}> = ({
     </>
   );
 };
-
-export default Inspector;

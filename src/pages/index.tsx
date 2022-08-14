@@ -5,8 +5,8 @@ import {useRouter} from "next/router";
 import {Header} from "../components/header";
 import {Footer} from "../components/footer";
 import {JsonInput, useInputStore} from "../components/json-input";
-import {useTraceStore} from "./inspect/inspector";
-import {useHideShortTracesStore} from "./inspect/components";
+import {useTraceStore} from "../components/inspector";
+import {useHideShortTracesStore} from "../components/resolver";
 import {TracingPayload as TracingPayloadSchema} from "../schemas";
 
 type TracingPayload = z.infer<typeof TracingPayloadSchema>;

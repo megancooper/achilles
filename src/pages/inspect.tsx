@@ -1,15 +1,15 @@
 import {z} from "zod";
 import {useEffect} from "react";
 import type {NextPage} from "next";
-import {Header} from "../../components/header";
-import {Footer} from "../../components/footer";
-import {Inspector, useTraceStore} from "./inspector";
-import {trpc} from "../../utils/trpc";
+import {Header} from "../components/header";
+import {Footer} from "../components/footer";
+import {Inspector, useTraceStore} from "../components/inspector";
+import {trpc} from "../utils/trpc";
 import {
   TracingPayload as TracingPayloadSchema,
   Resolver as ResolverSchema,
-} from "../../schemas";
-import SpinnerCircle from "../../svgs/spinner.svg";
+} from "../schemas";
+import SpinnerCircle from "../svgs/spinner.svg";
 
 type TracingPayload = z.infer<typeof TracingPayloadSchema>;
 type ResolverType = z.infer<typeof ResolverSchema>;

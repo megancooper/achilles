@@ -3,10 +3,10 @@ import z from "zod";
 import create from "zustand";
 import shallow from "zustand/shallow";
 import {clsx} from "clsx";
-import {Resolver as ResolverSchema, Block as BlockSchema} from "../../schemas";
-import {nanoToMilli} from "../../utils/time";
-import CaretRight from "../../svgs/caret-right-fill.svg";
-import CaretDown from "../../svgs/caret-down-fill.svg";
+import {Resolver as ResolverSchema, Block as BlockSchema} from "../schemas";
+import {nanoToMilli} from "../utils/time";
+import CaretRight from "../svgs/caret-right-fill.svg";
+import CaretDown from "../svgs/caret-down-fill.svg";
 
 type ResolverType = z.infer<typeof ResolverSchema>;
 type NestedTrace = ResolverType & {nested?: ResolverType[]};
@@ -229,5 +229,3 @@ export const Resolver: React.FC<{
     </div>
   );
 };
-
-export default Resolver;

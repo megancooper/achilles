@@ -5,8 +5,8 @@ import {useRouter} from "next/router";
 import {useAutoAnimate} from "@formkit/auto-animate/react";
 import CrossHair from "../svgs/cross-hair.svg";
 import InfoCircle from "../svgs/info-circle.svg";
-import {useTraceStore} from "../pages/inspect/inspector";
-import {useHideShortTracesStore} from "../pages/inspect/components";
+import {useTraceStore} from "./inspector";
+import {useHideShortTracesStore} from "../components/resolver";
 import demo from "../mocks/demo.json";
 
 export const Header = () => {
