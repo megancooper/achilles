@@ -32,7 +32,7 @@ export const JsonInput = () => {
 
   return (
     <textarea
-      className="bg-slate-600 p-2 border text-white border-gray-500 rounded shadow outline-gray-600 resize-none mb-4"
+      className="bg-slate-600 p-2 w-full lg:w-auto border text-white border-gray-500 rounded shadow outline-gray-600 resize-none mb-4"
       placeholder='Paste the "extensions" object from your apollo graphql response here.'
       cols={75}
       rows={25}
